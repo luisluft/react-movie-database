@@ -2,7 +2,7 @@ import React from "react";
 import { Switch, Route } from "react-router-dom";
 
 import Home from "./Home";
-import Movie from "./SingleMovie";
+import SingleMovie from "./SingleMovie";
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
         <Home />
       </Route>
       <Route path="/movies/:id">
-        <Movie />
+        <SingleMovie />
       </Route>
     </Switch>
   );
